@@ -1,15 +1,14 @@
 const albums = [
-    // Add your album IDs here
+    // links dos álbuns aqui (encontre uma maneira de automatizar isso) 
     "2lIZef4lzdvZkiiCzvPKj7",
-	"2qK5koEmC0NIKohGdGeqX6",
-    // ...more albums
+    "2qK5koEmC0NIKohGdGeqX6",
 ];
 
 function getDailyAlbum() {
-    const today = new Date().toISOString().slice(0, 10); // Get current date in YYYY-MM-DD format
-    const startDate = "2024-01-01"; // Define a start date in YYYY-MM-DD format
+    const today = new Date().toISOString().slice(0, 10);
+    const startDate = "2024-01-01";
     const daysSinceStart = Math.floor((new Date(today) - new Date(startDate)) / (1000 * 60 * 60 * 24));
-    const albumIndex = daysSinceStart % albums.length; // Cycle through the album list
+    const albumIndex = daysSinceStart % albums.length;
     return albums[albumIndex];
 }
 
@@ -128,5 +127,4 @@ document.getElementById('review-input').addEventListener('keypress', (event) => 
     }
 });
 
-// Set an initial album
 setSpotifyEmbed();
