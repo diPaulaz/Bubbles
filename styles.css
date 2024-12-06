@@ -4,28 +4,28 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #1e1e2f; /* Dark blue background */
+    background-color: #1e1e2f;
     overflow: hidden;
     position: relative;
-    color: white; /* Ensure text is visible on dark background */
-    font-family: 'Arial', sans-serif; /* Apply font family for text */
+    color: white;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
     display: flex;
     align-items: flex-end;
     position: relative;
-    z-index: 1; /* Ensure text field and embed are on top of bubbles */
+    z-index: 1;
 }
 
 #spotify-embed {
     width: 300px;
     height: 380px;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    background-color: transparent; /* Transparent corners */
+    background-color: transparent;
 }
 
 .review-container {
@@ -75,11 +75,11 @@ body {
     color: white;
     font-size: 16px;
     text-align: center;
-    white-space: normal; /* Allow text wrapping */
+    white-space: normal;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    max-width: 200px; /* Limit maximum width */
-    word-break: break-word; /* Break long words */
+    max-width: 200px;
+    word-break: break-word;
 }
 
 #logo {
